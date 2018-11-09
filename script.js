@@ -161,15 +161,15 @@ function startGame() {
     document.querySelector("#game").classList.remove("hide");
     document.querySelector("#game_ui").classList.remove("hide");
 
-    document.querySelector("#urenhed1").addEventListener("click", clickHandler);
-    document.querySelector("#urenhed2").addEventListener("click", clickHandler);
-    document.querySelector("#urenhed3").addEventListener("click", clickHandler);
-    document.querySelector("#urenhed4").addEventListener("click", clickHandler);
-    document.querySelector("#urenhed5").addEventListener("click", clickHandler);
-    document.querySelector("#urenhed6").addEventListener("click", clickHandler);
-    document.querySelector("#urenhed7").addEventListener("click", clickHandler);
-    document.querySelector("#urenhed8").addEventListener("click", clickHandler);
-    document.querySelector("#urenhed9").addEventListener("click", clickHandler);
+    document.querySelector("#position1").addEventListener("click", clickHandler);
+    document.querySelector("#position2").addEventListener("click", clickHandler);
+    document.querySelector("#position3").addEventListener("click", clickHandler);
+    document.querySelector("#position4").addEventListener("click", clickHandler);
+    document.querySelector("#position5").addEventListener("click", clickHandler);
+    document.querySelector("#position6").addEventListener("click", clickHandler);
+    document.querySelector("#position7").addEventListener("click", clickHandler);
+    document.querySelector("#position8").addEventListener("click", clickHandler);
+    document.querySelector("#position9").addEventListener("click", clickHandler);
 
     document.querySelector("#time").classList.remove("hide");
 
@@ -201,8 +201,10 @@ function clickHandler() {
         }
         this.classList = "";
         this.classList.add("dissappear");
-        time++;
-        document.querySelector("#timeLeft" + time).innerHTML = time;
+        timeLeft += 3;
+
+        console.log("ekstatid")
+        document.querySelector("#timer").innerHTML = timeLeft;
     } else if (this.classList.contains("type3")) {
         console.log("type3");
         document.querySelector("#vortelyd").currentTime = 0;
@@ -233,7 +235,7 @@ function nytElement() {
     console.log("nytElement");
     this.className = "";
     this.classList.add("type" + Math.floor((Math.random() * 3) + 1));
-    this.classList.add("position" + Math.floor((Math.random() * 9) + 1));
+    //    this.classList.add("position" + Math.floor((Math.random() * 9) + 1));
 }
 
 
@@ -247,6 +249,8 @@ function timeLeftFc() {
         levelComplete();
     } else if (life == 0) {
         gameOver();
+    } else if (timeLeft == 0) {
+        gameOver();
     }
 
     document.querySelector("#timer").innerHTML = +timeLeft;
@@ -256,15 +260,15 @@ function timeLeftFc() {
 
 function gameOver() {
     console.log("gameOver");
-    document.querySelector("#urenhed1").removeEventListener("click", clickHandler);
-    document.querySelector("#urenhed2").removeEventListener("click", clickHandler);
-    document.querySelector("#urenhed3").removeEventListener("click", clickHandler);
-    document.querySelector("#urenhed4").removeEventListener("click", clickHandler);
-    document.querySelector("#urenhed5").removeEventListener("click", clickHandler);
-    document.querySelector("#urenhed6").removeEventListener("click", clickHandler);
-    document.querySelector("#urenhed7").removeEventListener("click", clickHandler);
-    document.querySelector("#urenhed8").removeEventListener("click", clickHandler);
-    document.querySelector("#urenhed9").removeEventListener("click", clickHandler);
+    document.querySelector("#position1").removeEventListener("click", clickHandler);
+    document.querySelector("#position2").removeEventListener("click", clickHandler);
+    document.querySelector("#position3").removeEventListener("click", clickHandler);
+    document.querySelector("#position4").removeEventListener("click", clickHandler);
+    document.querySelector("#position5").removeEventListener("click", clickHandler);
+    document.querySelector("#position6").removeEventListener("click", clickHandler);
+    document.querySelector("#position7").removeEventListener("click", clickHandler);
+    document.querySelector("#position8").removeEventListener("click", clickHandler);
+    document.querySelector("#position9").removeEventListener("click", clickHandler);
 
     document.querySelector("#time").classList.add("hide");
     document.querySelector("#timer").classList.add("hide");
@@ -278,15 +282,15 @@ function gameOver() {
 
 function levelComplete() {
     console.log("levelComplete");
-    document.querySelector("#urenhed1").removeEventListener("click", clickHandler);
-    document.querySelector("#urenhed2").removeEventListener("click", clickHandler);
-    document.querySelector("#urenhed3").removeEventListener("click", clickHandler);
-    document.querySelector("#urenhed4").removeEventListener("click", clickHandler);
-    document.querySelector("#urenhed5").removeEventListener("click", clickHandler);
-    document.querySelector("#urenhed6").removeEventListener("click", clickHandler);
-    document.querySelector("#urenhed7").removeEventListener("click", clickHandler);
-    document.querySelector("#urenhed8").removeEventListener("click", clickHandler);
-    document.querySelector("#urenhed9").removeEventListener("click", clickHandler);
+    document.querySelector("#position1").removeEventListener("click", clickHandler);
+    document.querySelector("#position2").removeEventListener("click", clickHandler);
+    document.querySelector("#position3").removeEventListener("click", clickHandler);
+    document.querySelector("#position4").removeEventListener("click", clickHandler);
+    document.querySelector("#position5").removeEventListener("click", clickHandler);
+    document.querySelector("#position6").removeEventListener("click", clickHandler);
+    document.querySelector("#position7").removeEventListener("click", clickHandler);
+    document.querySelector("#position8").removeEventListener("click", clickHandler);
+    document.querySelector("#position9").removeEventListener("click", clickHandler);
     document.querySelector("#time").classList.add("hide");
     document.querySelector("#timer").classList.add("hide");
 

@@ -91,48 +91,48 @@ body {
 
 
 /********************* Position *****************/
-.position1 {
+#position1 {
     top: 33vw;
     left: 30vw;
 }
 
-.position2 {
+#position2 {
     top: 40vw;
     left: 50vw;
 }
 
-.position3 {
+#position3 {
     top: 23vw;
     left: 70vw;
 }
 
-.position4 {
+#position4 {
     top: 30vw;
     left: 46vw;
 }
 
-.position5 {
+#position5 {
     top: 40vw;
     left: 20vw;
 }
 
-.position6 {
+#position6 {
     top: 40vw;
     left: 70vw;
 }
 
-.position7 {
+#position7 {
     ;
     top: 30vw;
     left: 60vw;
 }
 
-.position8 {
+#position8 {
     top: 23vw;
     left: 17vw;
 }
 
-.position9 {
+#position9 {
     top: 35vw;
     left: 80vw;
 }
