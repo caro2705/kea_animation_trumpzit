@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trump'zit</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div id="screen">
+        <div id="menu_background" class=""></div>
+        <div id="game" class="hide">
+            <div id="game_background"></div>
+
+            <div id="game_elements">
+                <div id="urenhed1" class="type1 position1"></div>
+                <div id="urenhed2" class="type1 position2"></div>
+                <div id="urenhed3" class="type1 position3"></div>
+                <div id="urenhed4" class="type2 position4"></div>
+                <div id="urenhed5" class="type2 position5"></div>
+                <div id="urenhed6" class="type2 position6"></div>
+                <div id="urenhed7" class="type3 position7"></div>
+                <div id="urenhed8" class="type3 position8"></div>
+                <div id="urenhed9" class="type3 position9"></div>
+            </div>
+
+            <div id="game_ui" class="hide">
+                <div id="points"></div>
+                <div id="energy">
+                    <div id="heart1" class="heart"></div>
+                    <div id="heart2" class="heart"></div>
+                    <div id="heart3" class="heart"></div>
+                </div>
+                <div id="time">
+                    <div id="timer">0</div>
+                </div>
+            </div>
+        </div>
+        <div id="start" class="hide"></div>
+        <div id="levelcomplete" class="hide"></div>
+        <a href="javascript:history.go(0)">
+            <div id="gameover" class="hide"></div>
+            <div id="replayknap" class="hide"></div>
+        </a>
+        <div id="settings" class=""></div>
+        <div id="setting_screen" class="hide">
+            <div id="setting_effekt_sound">
+
+                <!--                <h1>Effekter</h1>-->
+                <div id="sfx" class="on">
+                    <div id="sfx_sprite"></div>
+                </div>
+            </div>
+            <div id="setting_music">
+                <!--                <h1>Musik</h1>-->
+                <div id="music" class="on">
+                    <div id="music_sprite"></div>
+                </div>
+
+            </div>
+            <div id="kryds" class="kryds"></div>
+            <div id="setting_close"></div>
+        </div>
+
+
+
+        <audio id="musik">
+            <source src="lyde/ES_Musique%20A%20La%20Carte%2004%20-%20John%20%C3%85hlin.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="bumslyd">
+            <source src="lyde/bums.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="hudormlyd">
+            <source src="lyde/hudorm.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="vortelyd">
+            <source src="lyde/vorte.mp3" type="audio/mpeg">
+        </audio>
+
+    </div>
+    <script src="script.js"></script>
+
+
+
+</body>
+
+</html>
